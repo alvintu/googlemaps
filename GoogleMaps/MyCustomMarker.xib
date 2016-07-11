@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="bUl-eX-dVB" customClass="MyCustomMarker">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yeK-nS-Ong">
+                    <rect key="frame" x="8" y="8" width="84" height="84"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="84" id="02Y-V6-k9U"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Big Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ya2-Nc-iJA">
+                    <rect key="frame" x="100" y="8" width="83" height="26"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="21"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Little text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MxH-k7-oKk">
+                    <rect key="frame" x="100" y="42" width="72" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="0.82291666669999997" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="yeK-nS-Ong" secondAttribute="bottom" constant="8" id="72P-6R-3HA"/>
+                <constraint firstItem="Ya2-Nc-iJA" firstAttribute="leading" secondItem="yeK-nS-Ong" secondAttribute="trailing" constant="8" id="DzT-bB-dOJ"/>
+                <constraint firstItem="Ya2-Nc-iJA" firstAttribute="top" secondItem="bUl-eX-dVB" secondAttribute="top" constant="8" id="Sas-5p-GMQ"/>
+                <constraint firstItem="MxH-k7-oKk" firstAttribute="top" secondItem="Ya2-Nc-iJA" secondAttribute="bottom" constant="8" id="bzd-Kh-R30"/>
+                <constraint firstItem="yeK-nS-Ong" firstAttribute="top" secondItem="bUl-eX-dVB" secondAttribute="top" constant="8" id="ihn-ZN-6an"/>
+                <constraint firstItem="yeK-nS-Ong" firstAttribute="leading" secondItem="bUl-eX-dVB" secondAttribute="leading" constant="8" id="mbl-iD-3lh"/>
+                <constraint firstItem="MxH-k7-oKk" firstAttribute="leading" secondItem="yeK-nS-Ong" secondAttribute="trailing" constant="8" id="msK-4z-zxA"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="15"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="detail" destination="MxH-k7-oKk" id="sig-8O-Q5c"/>
+                <outlet property="image" destination="yeK-nS-Ong" id="Eew-Zx-UCU"/>
+                <outlet property="title" destination="Ya2-Nc-iJA" id="4mG-0t-jDC"/>
+            </connections>
+            <point key="canvasLocation" x="21" y="-86"/>
+        </view>
+    </objects>
+</document>
