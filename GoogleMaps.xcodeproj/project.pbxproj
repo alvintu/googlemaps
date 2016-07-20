@@ -18,7 +18,6 @@
 		C84F40001D30351800D08707 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C84F3FFE1D30351800D08707 /* LaunchScreen.storyboard */; };
 		C84F400B1D30351800D08707 /* GoogleMapsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C84F400A1D30351800D08707 /* GoogleMapsTests.m */; };
 		C84F40161D30351800D08707 /* GoogleMapsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C84F40151D30351800D08707 /* GoogleMapsUITests.m */; };
-		C8B6C05F1D305A8300044CD0 /* MyCustomMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B6C05E1D305A8300044CD0 /* MyCustomMarker.m */; };
 		C8B6C0611D305A9900044CD0 /* MyCustomMarker.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8B6C0601D305A9900044CD0 /* MyCustomMarker.xib */; };
 		C8B6C0671D305FC500044CD0 /* apple-icon-180x180.png in Resources */ = {isa = PBXBuildFile; fileRef = C8B6C0621D305FC500044CD0 /* apple-icon-180x180.png */; };
 		C8B6C0681D305FC500044CD0 /* gregorys.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8B6C0631D305FC500044CD0 /* gregorys.jpg */; };
@@ -26,6 +25,7 @@
 		C8B6C06A1D305FC500044CD0 /* shakeshack.png in Resources */ = {isa = PBXBuildFile; fileRef = C8B6C0651D305FC500044CD0 /* shakeshack.png */; };
 		C8B6C06B1D305FC500044CD0 /* sophies.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8B6C0661D305FC500044CD0 /* sophies.jpg */; };
 		C8B6C06E1D30676800044CD0 /* CustomMarkerClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B6C06D1D30676800044CD0 /* CustomMarkerClass.m */; };
+		C8ECDE161D3FD41900996F70 /* MyCustomMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = C8ECDE151D3FD41900996F70 /* MyCustomMarker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,8 +66,6 @@
 		C84F40111D30351800D08707 /* GoogleMapsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoogleMapsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C84F40151D30351800D08707 /* GoogleMapsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoogleMapsUITests.m; sourceTree = "<group>"; };
 		C84F40171D30351800D08707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C8B6C05D1D305A8300044CD0 /* MyCustomMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyCustomMarker.h; path = ../../MyCustomMarker.h; sourceTree = "<group>"; };
-		C8B6C05E1D305A8300044CD0 /* MyCustomMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyCustomMarker.m; path = ../../MyCustomMarker.m; sourceTree = "<group>"; };
 		C8B6C0601D305A9900044CD0 /* MyCustomMarker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCustomMarker.xib; sourceTree = "<group>"; };
 		C8B6C0621D305FC500044CD0 /* apple-icon-180x180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-icon-180x180.png"; sourceTree = "<group>"; };
 		C8B6C0631D305FC500044CD0 /* gregorys.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gregorys.jpg; sourceTree = "<group>"; };
@@ -76,6 +74,8 @@
 		C8B6C0661D305FC500044CD0 /* sophies.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sophies.jpg; sourceTree = "<group>"; };
 		C8B6C06C1D30676800044CD0 /* CustomMarkerClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomMarkerClass.h; sourceTree = "<group>"; };
 		C8B6C06D1D30676800044CD0 /* CustomMarkerClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomMarkerClass.m; sourceTree = "<group>"; };
+		C8ECDE141D3FD41900996F70 /* MyCustomMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCustomMarker.h; sourceTree = "<group>"; };
+		C8ECDE151D3FD41900996F70 /* MyCustomMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCustomMarker.m; sourceTree = "<group>"; };
 		E9EA2C8BB8DF1C4ED6103F85 /* libPods-GoogleMaps.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoogleMaps.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDD5D260030461CCD79C37AC /* Pods-GoogleMaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleMaps.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleMaps/Pods-GoogleMaps.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -159,8 +159,8 @@
 				C84F3FF71D30351800D08707 /* ViewController.m */,
 				C8B6C06C1D30676800044CD0 /* CustomMarkerClass.h */,
 				C8B6C06D1D30676800044CD0 /* CustomMarkerClass.m */,
-				C8B6C05D1D305A8300044CD0 /* MyCustomMarker.h */,
-				C8B6C05E1D305A8300044CD0 /* MyCustomMarker.m */,
+				C8ECDE141D3FD41900996F70 /* MyCustomMarker.h */,
+				C8ECDE151D3FD41900996F70 /* MyCustomMarker.m */,
 				C8B6C0601D305A9900044CD0 /* MyCustomMarker.xib */,
 				C823BD6C1D316E0400B6DACE /* WebViewController.h */,
 				C823BD6D1D316E0400B6DACE /* WebViewController.m */,
@@ -391,11 +391,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8ECDE161D3FD41900996F70 /* MyCustomMarker.m in Sources */,
 				C8B6C06E1D30676800044CD0 /* CustomMarkerClass.m in Sources */,
 				C823BD6F1D316E0400B6DACE /* WebViewController.m in Sources */,
 				C84F3FF81D30351800D08707 /* ViewController.m in Sources */,
 				C84F3FF51D30351800D08707 /* AppDelegate.m in Sources */,
-				C8B6C05F1D305A8300044CD0 /* MyCustomMarker.m in Sources */,
 				C84F3FF21D30351800D08707 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
